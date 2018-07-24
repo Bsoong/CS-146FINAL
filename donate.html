@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Donate</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/IndexAndExtras.css" />
+        <link rel="stylesheet" href="css/donation.css" />
+        
+        <script type="text/javascript" src="js/navigation.js">
+        </script>
+        
+    </head>
+    
+    
+    <body>
+        <div class=head id="featured">
+            <a id="navi" href='index.html' target="_self">Home</a>
+            <a id="navi2" href='animal_info.html'>Animal Info</a>
+            <a id="navi3" href='photogallery.html'>Gallery</a>
+            <a id="navi4" href='about.html'>About Us</a>
+        </div>
+        
+        <h1 class=header><strong>Donate</strong></h1>
+        <hr>
+        
+        
+        
+    <form name="donation" onreset="clearmessage()" onsubmit="donate(); return false;">
+      <fieldset>
+        <legend>Donator's Info</legend>
+        
+        <label for="firstname" class="labelitem">First name:</label>
+        <input type="text" name="firstname" id="firstname" 
+               placeholder="Enter first name." required
+               title="First name cannot be blank." /><br />
+        
+        <label for="lastname" class="labelitem">Last name:</label>
+        <input type="text" name="lastname" id="lastname" 
+               placeholder="Enter last name." required 
+               title="Last name cannot be blank." /><br />
+        
+        <div class="labelitem"><label for="address1">Address:</label></div>
+        <div class="inputitem">
+          <input type="text" name="address1" id="address1" 
+                 placeholder="Enter street address." required 
+                 title="Address cannot be blank." /><br />
+          <input type="text" name="address2" id="address2"/><br />
+        </div>
+        
+        <label for="city" class="labelitem">City:</label>
+        <input type="text" name="city" id="city" 
+               placeholder="Enter city." required /><br />
+        
+        <label for="state" class="labelitem">State:</label>
+        <input type="text" name="state" id="state" placeholder="Enter state." required><br />
+        
+        <label for="zipcode" class="labelitem">Zip code:</label>
+        <input type="text" name="zipcode" id="zipcode" 
+               placeholder="Enter zip code." required 
+               title="xxxxx or xxxxx-xxxx" /><br /><br />
+        
+        <label for="email" class="labelitem">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Enter email address." required /><br />
+          
+        <label for="donation_amount" class="labelitem">Donation:</label>
+        <input type="range" min="1" max="500" value="250" name="donation_amount" id="donation_amount" placeholder="Choose donation amount." required />
+        <p id="amount_display">
+            You are donating: $<span id="amount"></span>
+          </p>
+          
+        <label for="CardName" class="labelitem">Name on Card:</label>
+        
+        <input type="text" name="CardName" id="CardName" placeholder="Enter name on Card." required /> <br/>
+        
+          
+        <label for="yes" class="labelitem">Credit Card Number:</label>
+        <input type="text" name="yes" id="yes" placeholder="Enter Credit Card Number." required /><br />
+        
+        <label for="expiration" class="expiration">Expiration Date:</label>
+        <input type="month" name="expiration" id="expiration" placeholder="mm/yyyy" required /> <br />
+          
+        <label for="cvv" class="labelitem">CVV:</label>
+        <input type="text" name="cvv" id="cvv" placeholder="###" required /> <br />
+        
+      </fieldset>
+            
+      <section id="submit">
+          <input type="reset" value="Reset" onclick="reset_form()" />
+        <input type="submit" value="Submit" />
+      </section><br /><br /><br />
+        
+        </form>
+        
+        <div id="success_message">
+            <span id="Thanks">You have Successfully Donated $<span id="outAmount"></span>! Thank You for your Support!</span>
+        </div>
+
+        
+        
+        <hr>
+        <footer>
+        <h3>Emotional Animal Support</h3>
+            
+            <p>Have any animals that you want us to add? Email us here at <a href="mailto:SITanimalsupport@gmail.com">SITanimalsupport@gmail.com</a></p>
+        
+        <div class="columnz">
+
+            <div class="col-1">    
+              <div id="Heading" class="Rtable-cell"><h3>Services</h3></div>
+              <div id="Two" class="Rtable-cell"><a href="photogallery.html">Animal Gallery</a></div>
+            </div>
+            
+            <div class="col-2">    
+              <div id="Heading" class="Rtable-cell"><h3>Company</h3></div>
+              <div id="Two" class="Rtable-cell"><a href="tel:201-216-5000">Call Us</a></div>
+              <div id="Three" class="Rtable-cell"><a href="https://www.google.com/maps/place/Stevens+Institute+of+Technology/@40.7448416,-74.0278717,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259de94dced4f:0xd4c9d146086e72ae!8m2!3d40.7448376!4d-74.025683">Visit Us</a></div>
+            </div>
+            
+            <div class="col-3"> 
+              <div id="Heading" class="Rtable-cell"><h3>Support</h3></div>
+              <div id="Two" class="Rtable-cell"><a href="donate.html">Donate</a></div>
+            </div>
+            
+            <div class="col-4"> 
+              <div id="Heading" class="Rtable-cell"><h3>Follow us on</h3></div>
+              <div id="Two" class="Rtable-cell"><a href="http://facebook.com/anquattrocchi">Facebook</a></div>
+              <div id="Three" class="Rtable-cell"><a href="http://twitter.com/therealquito">Twitter</a></div>
+              <div id="Four" class="Rtable-cell"><a href="http://instagram.com/anthony_quattrocchi">Instagram</a></div>
+            </div>
+            
+        </div>
+            
+            <small>Stevens Ducks&copy;</small>
+            
+        
+        </footer>
+    
+    <script type="text/javascript" src="js/donatepage.js"></script>
+    </body>
+    
+</html>
